@@ -11,7 +11,6 @@ const headingFont = Poppins({
 
 const bodyFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
   display: "swap",
 });
