@@ -38,7 +38,7 @@ export const homeData = {
   whatWeMake: {
     eyebrow: "What We Make",
     title: "Garments built for global brands",
-    subtitle: "Four product groups, one standard of quality.",
+    subtitle: "Product groups, one standard of quality.",
     groups: [
       {
         id: "tops",

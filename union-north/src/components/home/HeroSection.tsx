@@ -73,9 +73,9 @@ export default function HeroSection({}: HeroSectionProps = {}) {
   }, [handlePrev, handleNext]);
 
   return (
-    <section className="max-w-7xl mx-auto px-3 sm:px-6 pt-4 sm:pt-10">
+    <section className="w-full bg-white border-b border-line/70 py-4 sm:py-6 lg:py-8 relative overflow-hidden sm:overflow-visible">
       <div
-        className="bg-white rounded-3xl sm:rounded-[36px] p-3 sm:p-8 lg:px-10 lg:pt-6 lg:pb-8 border border-line shadow-sm relative group overflow-hidden sm:overflow-visible"
+        className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative group"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
         onFocus={() => setPaused(true)}
@@ -86,7 +86,7 @@ export default function HeroSection({}: HeroSectionProps = {}) {
           type="button"
           onClick={handlePrev}
           aria-label="Previous Slide"
-          className="absolute left-1 sm:left-2 lg:-left-5 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full bg-white text-navy shadow-lg hover:shadow-xl border border-line flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
+          className="absolute left-1 sm:left-2 lg:left-2 xl:-left-5 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full bg-white text-navy shadow-lg hover:shadow-xl border border-line flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
         >
           <svg className="w-4 h-4 sm:w-5 sm:h-5 text-navy stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -97,7 +97,7 @@ export default function HeroSection({}: HeroSectionProps = {}) {
           type="button"
           onClick={handleNext}
           aria-label="Next Slide"
-          className="absolute right-1 sm:right-2 lg:-right-5 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full bg-white text-navy shadow-lg hover:shadow-xl border border-line flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
+          className="absolute right-1 sm:right-2 lg:right-2 xl:-right-5 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full bg-white text-navy shadow-lg hover:shadow-xl border border-line flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
         >
           <svg className="w-4 h-4 sm:w-5 sm:h-5 text-navy stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
