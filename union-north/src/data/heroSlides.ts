@@ -29,6 +29,7 @@ export interface HeroSlide {
     title: string;
     description: string;
     proof: { value: string; label: string };
+    rightProof?: { value: string; label: string };
 
     /** Centre image */
     image: string;
@@ -52,9 +53,10 @@ export const heroSlides: HeroSlide[] = [
         description:
             "From first sketch to approved sample, our team turns your concept into a garment that is ready for production.",
         proof: { value: "25+", label: "Years of apparel experience" },
+        rightProof: { value: "98%", label: "First-sample approval rate" },
         image: "/images/home/homeHero-1.png",
         imageAlt: "Models wearing coordinated blue and cream outfits",
-        imageWrapperClass: "lg:h-[640px] lg:w-[540px]",
+        imageWrapperClass: "lg:h-[670px] lg:w-[460px] xl:h-[640px] xl:w-[540px]",
         features: [
             { icon: "ruler", title: "Design Support" },
             { icon: "scissors", title: "Pattern Making" },
@@ -78,9 +80,10 @@ export const heroSlides: HeroSlide[] = [
         description:
             "T-shirts, polos, chinos and sweatpants stitched to hold their shape wash after wash.",
         proof: { value: "350k", label: "Pieces made every month" },
-        image: "/images/home/homeHero-2.png",
+        rightProof: { value: "99.2%", label: "AQL quality inspection pass" },
+        image: "/images/home/homeHero-2-v2.png",
         imageAlt: "Model in tailored burgundy and dark apparel",
-        imageWrapperClass: "lg:h-[640px] lg:w-[540px]",
+        imageWrapperClass: "lg:h-[670px] lg:w-[460px] xl:h-[640px] xl:w-[540px]",
         features: [
             { icon: "shirt", title: "Premium Fabrics" },
             { icon: "shield", title: "Checked Every Stage" },
@@ -104,9 +107,10 @@ export const heroSlides: HeroSlide[] = [
         description:
             "We plan, produce and ship orders on schedule to buyers across more than 18 markets.",
         proof: { value: "18+", label: "Export markets served" },
+        rightProof: { value: "99.5%", label: "On-time export delivery" },
         image: "/images/home/homeHero-3.png",
         imageAlt: "Mannequins styled in bright knitwear and denim",
-        imageWrapperClass: "lg:h-[640px] lg:w-[540px]",
+        imageWrapperClass: "lg:h-[670px] lg:w-[460px] xl:h-[640px] xl:w-[540px]",
         features: [
             { icon: "globe", title: "Worldwide Buyers" },
             { icon: "truck", title: "On-Time Shipping" },
@@ -130,9 +134,10 @@ export const heroSlides: HeroSlide[] = [
         description:
             "Safe, fair workplaces and a skilled team of 500+ people behind every order we ship.",
         proof: { value: "500+", label: "Skilled team members" },
+        rightProof: { value: "100%", label: "WRAP & ethical certified" },
         image: "/images/home/homeHero-4.png",
         imageAlt: "Casual outfits in brown, cream and denim",
-        imageWrapperClass: "lg:h-[640px] lg:w-[540px]",
+        imageWrapperClass: "lg:h-[670px] lg:w-[460px] xl:h-[640px] xl:w-[540px]",
         features: [
             { icon: "users", title: "Fair Workplaces" },
             { icon: "leaf", title: "Renewable Energy" },
