@@ -5,10 +5,12 @@ import Navbar from "@/components/shared/Navbar";
 import HeroSection from "@/components/home/HeroSection";
 import StatsBar from "@/components/home/StatsBar";
 import ProductGroups from "@/components/home/ProductGroups";
-import ResponsibleSection from "@/components/home/ResponsibleSection";
-import FloatingCta from "@/components/shared/FloatingCta";
+import HomeBanner from "@/components/home/HomeBanner";
+// import ResponsibleSection from "@/components/home/ResponsibleSection";
+// import FloatingCta from "@/components/shared/FloatingCta";
 import Footer from "@/components/shared/Footer";
 import QuoteModal from "@/components/shared/QuoteModal";
+import { StorySections } from "@/components/home/StorySections";
 
 export default function HomePage() {
   const [quoteOpen, setQuoteOpen] = useState(false);
@@ -21,8 +23,10 @@ export default function HomePage() {
         <HeroSection onOpenQuote={() => setQuoteOpen(true)} />
         <StatsBar />
         <ProductGroups />
-        <ResponsibleSection />
-        <FloatingCta onOpenQuote={() => setQuoteOpen(true)} />
+        <HomeBanner />
+        <StorySections />
+        {/* <ResponsibleSection /> */}
+        {/* <FloatingCta onOpenQuote={() => setQuoteOpen(true)} /> */}
       </main>
 
       <Footer />
