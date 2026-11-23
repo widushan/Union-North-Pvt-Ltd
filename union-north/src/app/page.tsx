@@ -11,6 +11,7 @@ import HomeBanner from "@/components/home/HomeBanner";
 import Footer from "@/components/shared/Footer";
 import QuoteModal from "@/components/shared/QuoteModal";
 import { StorySections } from "@/components/home/StorySections";
+import Testimonials from "@/components/home/Testimonials";
 
 export default function HomePage() {
   const [quoteOpen, setQuoteOpen] = useState(false);
@@ -25,6 +26,7 @@ export default function HomePage() {
         <ProductGroups />
         <HomeBanner />
         <StorySections />
+        <Testimonials />
         {/* <ResponsibleSection /> */}
         {/* <FloatingCta onOpenQuote={() => setQuoteOpen(true)} /> */}
       </main>
